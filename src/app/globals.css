@@ -1,0 +1,86 @@
+body {
+  background-color: lightcyan;
+}
+
+.inputContainer {
+  background-color: lightcyan;
+  display: flex;
+  width: 100vw;
+  height: 40vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputLabel {
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  transition: 0.3s ease-out; /* Add a smooth transition effect */
+  pointer-events: none; /* Ensure label doesn't interfere with input events */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: -70px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+button {
+  padding: 13px 45px;
+  border-radius: 7px;
+  background-color: indigo;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.inputWrapper input:focus + label,
+.inputWrapper input:valid + label {
+  top: 30px;
+  font-size: 12px;
+  color: #333;
+}
+
+.nameLabel {
+  /* margin-left: -300px; */
+}
+
+.inputWrapper {
+  background-color: whitesmoke;
+  width: 40vw;
+  height: 20vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #333;
+  background-color: whitesmoke;
+  /* position: absolute; */
+  margin-left: 50px;
+}
+
+.speechContainer {
+  width: 100vw;
+  height: 30vh;
+  /* background-color: lightgray;
+   */
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speechWrapper {
+  width: 50vw;
+  height: 20vh;
+  /* background-color: aqua; */
+}
